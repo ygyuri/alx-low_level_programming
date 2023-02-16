@@ -1,3 +1,5 @@
 #!/bin/bash
-OUTPUT_FILE=${CFILE%.*}.s
-gcc -S -masm=intel $CFILE -o $OUTPUT_FILE
+
+# Generate the assembly code using the gcc compiler with the -S flag
+gcc -S -masm=intel $1 -o ${1%.*}.s
+

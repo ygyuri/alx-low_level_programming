@@ -1,29 +1,29 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-int main() {
-  // Initialize random seed
-  std::srand(std::time(nullptr));
-  
-  // Generate random number between -100 and 100
-  int n = std::rand() % 201 - 100;
-  
-  // Print the random number
-  std::cout << "The number " << n << " ";
-  
-  // Check if the number is positive, negative, or zero
-  if (n > 0) {
-    std::cout << "is positive";
-  } else if (n < 0) {
-    std::cout << "is negative";
-  } else {
-    std::cout << "is zero";
-  }
-  
-  // Print a new line
-  std::cout << std::endl;
-  
-  return 0;
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n > 0)
+{
+printf("%d is positive\n", n);
+}
+else if (n == 0)
+{
+printf("%d is zero\n", n);
+}
+else
+{
+printf("%d is negative\n", n);
+}
+return (0);
 }
 

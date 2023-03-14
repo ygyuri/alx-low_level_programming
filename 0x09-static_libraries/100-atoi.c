@@ -22,6 +22,6 @@ res = (res * 10) + (s[i] - '0');
 i++;
 }
 res *= sign;
-#return (res);
+return (res);
 }
 

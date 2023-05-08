@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
-* create_file – Generate a file.
+* create_file – Generates a file and writes text content to it.
 * @filename: Pointer to generated file’s name.
 * @text_content: String to write to file with a pointer.
 *
 * Return: - -1 if function fails.
 *         Otherwise - 1.
 */
+
 int create_file(const char *filename, char *text_content)
 {
 int fd, w, len = 0;
